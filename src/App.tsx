@@ -13,6 +13,7 @@ import Work from "./pages/Work";
 import GetInvolved from "./pages/GetInvolved";
 import Volunteer from "./pages/Volunteer";
 import Contact from "./pages/Contact";
+import News from "./pages/News";
 
 function ScrollToTopOnRouteChange() {
   const { pathname } = useLocation();
@@ -38,6 +39,7 @@ function App() {
             <Route path="/get-involved" element={<Volunteer />} />
             <Route path="/donate" element={<GetInvolved />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/news" element={<News />} />
           </Routes>
         </main>
         <Footer />

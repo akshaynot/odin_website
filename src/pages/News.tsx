@@ -20,4 +20,22 @@ export default function News() {
                 <div className="flex items-center text-gray-500 text-sm mb-4">
                   <Calendar size={16} className="mr-2" />
                   <span>March 15, 2024</span>
-                  <User size={16
+                  <User size={16} className="mr-2" />
+                  <span>Admin</span>
+                </div>
+                <h3 className="text-xl font-bold mb-2">Community Center Opening</h3>
+                <p className="text-gray-600 mb-4">
+                  We are thrilled to announce the opening of our new community
+                  center in Basoda.
+                </p>
+                <div className="flex items-center text-orange-500 font-semibold cursor-pointer hover:text-orange-600">
+                  Read More <ArrowRight size={16} className="ml-2" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
