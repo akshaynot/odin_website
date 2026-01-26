@@ -11,13 +11,13 @@ const Donation: React.FC = () => {
                         Your contribution, no matter the size, makes a significant difference in the lives of those we serve. Scan the QR code to donate securely.
                     </p>
                     <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg inline-block self-start border border-white/20">
-                        <p className="font-mono text-sm">UPI ID: your-upi-id@example</p>
+                        <p className="font-mono text-sm">UPI ID: savitritiwari2023-1@oksbi</p>
                     </div>
                 </div>
                 <div className="md:w-1/2 p-8 md:p-12 bg-gray-50 flex items-center justify-center">
                     <div className="bg-white p-4 rounded-xl shadow-md">
                         <img
-                            src="src/qrcode.png"
+                            src="src/assets/qrcode.jpeg"
                             alt="UPI QR Code"
                             className="w-64 h-64 object-contain"
                         />
