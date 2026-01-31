@@ -33,8 +33,6 @@ export default function GetInvolved() {
                 <div className="flex flex-wrap gap-3">
                   <Button variant="ghost" className="px-0 hover:bg-transparent hover:text-orange-600 font-normal">Facebook</Button>
                   <span className="text-gray-300 self-center">|</span>
-                  <Button variant="ghost" className="px-0 hover:bg-transparent hover:text-orange-600 font-normal">Twitter</Button>
-                  <span className="text-gray-300 self-center">|</span>
                   <Button variant="ghost" className="px-0 hover:bg-transparent hover:text-orange-600 font-normal">Instagram</Button>
                 </div>
               </div>
