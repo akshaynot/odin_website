@@ -17,7 +17,7 @@ const Donation: React.FC = () => {
                 <div className="md:w-1/2 p-8 md:p-12 bg-gray-50 flex items-center justify-center">
                     <div className="bg-white p-4 rounded-xl shadow-md">
                         <img
-                            src="src/assets/qrcode.jpeg"
+                            src="../src/assets/qrcode.jpeg"
                             alt="UPI QR Code"
                             className="w-64 h-64 object-contain"
                         />
