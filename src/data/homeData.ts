@@ -1,8 +1,4 @@
 
-import poImage from "../assets/po.avif";
-import healthImage from "../assets/health.avif";
-import ecoImage from "../assets/economic.avif";
-
 export const heroData = {
     title: "Join Hands with Us to Create a Better Tomorrow",
     subtitle:
@@ -18,19 +14,19 @@ export const featuredPrograms = [
         title: "Education Initiative",
         description:
             "Providing quality education and learning resources to underprivileged children.",
-        image: poImage,
+        image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     },
     {
         title: "Healthcare Access",
         description:
             "Ensuring accessible healthcare services for rural and urban communities.",
-        image: healthImage,
+        image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     },
     {
         title: "Economic Empowerment",
         description:
             "Supporting sustainable livelihoods through skill development and microfinance.",
-        image: ecoImage,
+        image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     },
 ];
 

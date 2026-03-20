@@ -1,16 +1,16 @@
 
-import img1 from "../assets/work/1.jpg";
-import img2 from "../assets/work/2.jpg";
-import img3 from "../assets/work/3.jpg";
-import img4 from "../assets/work/3.jpg"; // These seem to be repeats in the original file, keeping as is for now or distinct keys if needed.
-import img5 from "../assets/work/3.jpg";
-import img6 from "../assets/work/3.jpg";
-import img7 from "../assets/work/3.jpg";
-import img8 from "../assets/work/3.jpg";
+const img1 = "https://images.unsplash.com/photo-1460904577954-8fadb262612c?w=600&auto=format&fit=crop&q=60";
+const img2 = "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=600&auto=format&fit=crop&q=60";
+const img3 = "https://images.unsplash.com/photo-1529390079861-591de354faf5?w=600&auto=format&fit=crop&q=60";
+const img4 = "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&auto=format&fit=crop&q=60";
+const img5 = "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=600&auto=format&fit=crop&q=60";
+const img6 = "https://images.unsplash.com/photo-1524334228333-0f6db392f8a1?w=600&auto=format&fit=crop&q=60";
+const img7 = "https://images.unsplash.com/photo-1524666041070-9d87656c25bb?w=600&auto=format&fit=crop&q=60";
+const img8 = "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&auto=format&fit=crop&q=60";
 
-import theatreImage from "../assets/work/1.jpg";
-import culturalImage from "../assets/work/2.jpg";
-import workshopImage from "../assets/work/3.jpg";
+const theatreImage = "https://images.unsplash.com/photo-1507676184212-d0330a151f84?w=800&auto=format&fit=crop&q=60";
+const culturalImage = "https://images.unsplash.com/photo-1544928147-79a2dbc1f389?w=800&auto=format&fit=crop&q=60";
+const workshopImage = "https://images.unsplash.com/photo-1513258496099-481620d4ce8d?w=800&auto=format&fit=crop&q=60";
 
 export const workImages = [img1, img2, img3, img4, img5, img6, img7, img8];
 

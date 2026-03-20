@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ODIN Cultural and Social Welfare Society Website
 
 A modern, responsive website for ODIN Cultural and Social Welfare Society built with React, TypeScript, and Tailwind CSS. This website serves as a platform for the NGO to showcase their work, accept donations, and engage with volunteers and supporters.
@@ -162,3 +163,7 @@ Project Link: [https://github.com/yourusername/odin-ngo-website](https://github.
 - [Vite](https://vitejs.dev/)
 - [RazorPay](https://razorpay.com/)
 - [Lucide Icons](https://lucide.dev/)
+=======
+# odin_website
+Website for odin ngo
+>>>>>>> master
