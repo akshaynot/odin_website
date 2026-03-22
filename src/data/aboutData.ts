@@ -1,3 +1,4 @@
+import netramTiwariImage from '../assets/member_data/netram_tiwari.png';
 
 export const milestones = [
     {
@@ -44,15 +45,15 @@ export const milestones = [
 
 export const teamMembers = [
     {
-        name: "Dr. Rajesh Kumar",
+        name: "Netram Tiwari",
         position: "Executive Director",
-        image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
-        bio: "20+ years of experience in social development"
+        image: netramTiwariImage,
+        bio: "10+ years of experience in social development through art."
     },
     {
-        name: "Priya Singh",
+        name: "Shimlesh Dixit",
         position: "Program Director",
-        image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+        image: "",
         bio: "Expert in community engagement and program management"
     },
     {

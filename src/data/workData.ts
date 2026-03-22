@@ -1,3 +1,6 @@
+import work1 from '../assets/work/1.jpg';
+import work2 from '../assets/work/2.jpg';
+import work3 from '../assets/work/3.jpg';
 
 const img1 = "https://images.unsplash.com/photo-1460904577954-8fadb262612c?w=600&auto=format&fit=crop&q=60";
 const img2 = "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=600&auto=format&fit=crop&q=60";
@@ -8,9 +11,9 @@ const img6 = "https://images.unsplash.com/photo-1524334228333-0f6db392f8a1?w=600
 const img7 = "https://images.unsplash.com/photo-1524666041070-9d87656c25bb?w=600&auto=format&fit=crop&q=60";
 const img8 = "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&auto=format&fit=crop&q=60";
 
-const theatreImage = "https://images.unsplash.com/photo-1507676184212-d0330a151f84?w=800&auto=format&fit=crop&q=60";
-const culturalImage = "https://images.unsplash.com/photo-1544928147-79a2dbc1f389?w=800&auto=format&fit=crop&q=60";
-const workshopImage = "https://images.unsplash.com/photo-1513258496099-481620d4ce8d?w=800&auto=format&fit=crop&q=60";
+const theatreImage = work1;
+const culturalImage = work2;
+const workshopImage = work3;
 
 export const workImages = [img1, img2, img3, img4, img5, img6, img7, img8];
 

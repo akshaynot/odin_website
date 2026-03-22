@@ -18,8 +18,8 @@ const TeamGrid: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 {teamMembers.map((member, index) => (
-                    <div 
-                        key={index} 
+                    <div
+                        key={index}
                         className={`group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2 animate-fade-in-up`}
                         style={{ animationDelay: `${(index + 2) * 100}ms` }}
                     >
@@ -27,7 +27,7 @@ const TeamGrid: React.FC = () => {
                         <div className="relative h-80 overflow-hidden">
                             {/* Overlay gradient */}
                             <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300 z-10"></div>
-                            
+
                             <img
                                 src={member.image}
                                 alt={member.name}
@@ -35,7 +35,7 @@ const TeamGrid: React.FC = () => {
                                 loading="lazy"
                                 decoding="async"
                             />
-                            
+
                             {/* Social Icons - Reveal on Hover */}
                             <div className="absolute bottom-6 left-0 right-0 flex justify-center gap-4 z-20 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
                                 <a href="#" className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-white hover:text-blue-600 transition-colors">
