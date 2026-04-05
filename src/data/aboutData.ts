@@ -1,4 +1,5 @@
 import netramTiwariImage from '../assets/member_data/netram_tiwari.png';
+import shimleshDixit from '../assets/member_data/shimlesh_dixit.png';
 
 export const milestones = [
     {
@@ -53,15 +54,10 @@ export const teamMembers = [
     {
         name: "Shimlesh Dixit",
         position: "Program Director",
-        image: "",
+        image: shimleshDixit,
         bio: "Expert in community engagement and program management"
     },
-    {
-        name: "Amit Patel",
-        position: "Finance Director",
-        image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
-        bio: "15+ years of experience in nonprofit finance"
-    }
+   
 ];
 
 export const aboutData = {

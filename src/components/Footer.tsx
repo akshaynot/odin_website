@@ -28,15 +28,15 @@ export default function Footer() {
           <ul className="space-y-2">
             <li className="flex items-center text-gray-400">
               <MapPin size={18} className="mr-2" />
-              123 NGO Street, City, Country
+              994/3k Bareth Road, Ganj Basoda, Madhya Pradesh 464221
             </li>
             <li className="flex items-center text-gray-400">
               <Phone size={18} className="mr-2" />
-              +1 234 567 890
+              +91 8871130485
             </li>
             <li className="flex items-center text-gray-400">
               <Mail size={18} className="mr-2" />
-              contact@odin.org
+              odincasw.society@gmail.com
             </li>
           </ul>
         </div>
@@ -44,13 +44,13 @@ export default function Footer() {
         <div>
           <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
           <div className="flex space-x-4">
-            <a href="#" className="text-gray-400 hover:text-orange-500 transition-colors duration-200">
+            {/* <a href="#" className="text-gray-400 hover:text-orange-500 transition-colors duration-200">
               <Facebook size={24} />
             </a>
             <a href="#" className="text-gray-400 hover:text-orange-500 transition-colors duration-200">
               <Twitter size={24} />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-orange-500 transition-colors duration-200">
+            </a> */}
+            <a href="https://www.instagram.com/odinsocial/" className="text-gray-400 hover:text-orange-500 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
               <Instagram size={24} />
             </a>
           </div>
@@ -59,7 +59,7 @@ export default function Footer() {
       
       <div className="max-w-7xl mx-auto px-4 mt-8 pt-8 border-t border-gray-800">
         <p className="text-center text-gray-400">
-          © 2024 ODIN Cultural and Social Welfare Society. All rights reserved.
+          © 2026 ODIN Cultural and Social Welfare Society. All rights reserved.
         </p>
       </div>
     </footer>

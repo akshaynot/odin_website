@@ -15,12 +15,12 @@ const TeamGrid: React.FC = () => {
                 </h2>
                 <div className="h-1.5 w-24 bg-gradient-to-r from-orange-400 to-pink-500 mx-auto rounded-full"></div>
             </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <div className="flex flex-wrap justify-center gap-10">
                 {teamMembers.map((member, index) => (
                     <div
                         key={index}
-                        className={`group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2 animate-fade-in-up`}
+                        className={`group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2 animate-fade-in-up w-full sm:w-80`}
                         style={{ animationDelay: `${(index + 2) * 100}ms` }}
                     >
                         {/* Image Container */}

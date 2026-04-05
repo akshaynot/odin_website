@@ -37,7 +37,7 @@ const AboutSnippet: React.FC = () => {
                 To eradicate inequality and build equitable opportunities through education and healthcare.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 hover:-translate-y-2 transition-transform duration-300 sm:translate-y-8">
+            <div className="bg-white p-8 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 hover:-translate-y-2 transition-transform duration-300">
               <div className="w-14 h-14 bg-pink-100 rounded-2xl flex items-center justify-center mb-6 shadow-inner text-pink-600">
                 <HeartHandshake size={28} />
               </div>

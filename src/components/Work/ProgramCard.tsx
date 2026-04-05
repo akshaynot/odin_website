@@ -18,8 +18,10 @@ const ProgramCard: React.FC<ProgramCardProps> = ({ program }) => {
                     loading="lazy"
                     decoding="async"
                 />
-                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-500 shadow-sm z-20">
-                    {program.impact}
+                <div className="absolute top-4 right-4 bg-white backdrop-blur-md px-4 py-1.5 rounded-full text-sm font-bold shadow-sm z-20">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-500">
+                        {program.impact}
+                    </span>
                 </div>
             </div>
             <div className="p-8 relative z-20 bg-white">

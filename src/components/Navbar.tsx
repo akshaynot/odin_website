@@ -51,8 +51,8 @@ export default function Navbar() {
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white/80 backdrop-blur-md shadow-lg" // Scrolled: Semi-transparent + Blur
-          : "bg-white shadow-none" // Top: Solid white (or transparent if you prefer)
+          ? "md:bg-white/80 md:backdrop-blur-md shadow-lg bg-white" // Desktop: Semi-transparent on scroll, Mobile: Always solid
+          : "bg-white shadow-md" // Top: Solid white with shadow
       }`}
     >
       <div className="max-w-7xl mx-auto px-4">

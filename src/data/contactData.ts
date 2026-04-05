@@ -1,12 +1,12 @@
 
 export const contactInfo = {
     address: {
-        line1: "123 NGO Street",
-        line2: "City, State 123456",
-        country: "Country",
+        line1: "994/3k Bareth Road",
+        line2: "Ganj Basoda, Madhya Pradesh 464221",
+        country: "India",
     },
-    phone: "+1 234 567 890",
-    email: "contact@odin.org",
+    phone: "+91 8871130485",
+    email: "odincasw.society@gmail.com",
     officeHours: [
         { day: "Monday - Friday", hours: "9:00 AM - 6:00 PM" },
         { day: "Saturday", hours: "10:00 AM - 4:00 PM" },

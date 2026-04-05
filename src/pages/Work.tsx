@@ -65,7 +65,7 @@ export default function Work() {
           </div>
 
           {/* Photo Gallery */}
-          <Gallery images={workImages} />
+          {/* <Gallery images={workImages} /> */}
 
         </div>
       </section>
