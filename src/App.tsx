@@ -8,6 +8,7 @@ import {
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ReactGA from "react-ga4";
+import { updateMetaTags } from "./utils/seoHelpers";
 
 // Declare gtag for TypeScript
 declare global {
@@ -17,6 +18,39 @@ declare global {
 }
 
 ReactGA.initialize("G-0BL04FG25Y");
+
+// Page meta tag configurations
+const pageMetaTags: { [key: string]: { title: string; description: string } } = {
+  '/': {
+    title: 'ODIN - Cultural and Social Welfare Society | Community Empowerment',
+    description: 'ODIN empowers marginalized communities through education, healthcare, and economic programs. Join our mission to create sustainable change across India.'
+  },
+  '/about': {
+    title: 'About ODIN | Our Mission, Vision & Team',
+    description: 'Learn about ODIN\'s mission to empower communities through education, healthcare, and cultural preservation. Meet our dedicated team.'
+  },
+  '/work': {
+    title: 'Our Work & Programs | ODIN Community Projects',
+    description: 'Explore ODIN\'s theatre programs, cultural initiatives, and community workshops designed to create lasting social impact.'
+  },
+  '/get-involved': {
+    title: 'Get Involved | Volunteer & Donate with ODIN',
+    description: 'Make a difference! Join ODIN as a volunteer or support our mission through donations to empower communities.'
+  },
+  '/donate': {
+    title: 'Donate to ODIN | Support Community Empowerment',
+    description: 'Your donation helps ODIN provide education, healthcare, and cultural programs to marginalized communities.'
+  },
+  '/contact': {
+    title: 'Contact ODIN | Get in Touch',
+    description: 'Have questions? Contact ODIN to learn more about our programs, volunteer opportunities, or partnership opportunities.'
+  },
+  '/news': {
+    title: 'ODIN News & Updates | Latest Community Stories',
+    description: 'Stay updated with the latest news, success stories, and updates from ODIN\'s community programs.'
+  }
+};
+
 
 
 
@@ -46,6 +80,16 @@ function ScrollToTopAndTrackPageView() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+  }, [pathname]);
+
+  useEffect(() => {
+    // Update meta tags based on current page
+    const metaTags = pageMetaTags[pathname] || pageMetaTags['/'];
+    updateMetaTags({
+      title: metaTags.title,
+      description: metaTags.description,
+      canonical: `https://odin-website.com${pathname}`
+    });
   }, [pathname]);
 
   useEffect(() => {

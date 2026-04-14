@@ -1,0 +1,18 @@
+# ODIN - Cultural and Social Welfare Society
+# Robots.txt file for search engine crawlers
+
+# Allow all bots
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+Disallow: /.env
+
+# Sitemap location
+Sitemap: https://odin-website.com/sitemap.xml
+
+# Crawl delay to be respectful of server resources
+Crawl-delay: 1
