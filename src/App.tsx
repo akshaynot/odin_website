@@ -9,6 +9,13 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ReactGA from "react-ga4";
 
+// Declare gtag for TypeScript
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void;
+  }
+}
+
 ReactGA.initialize("G-0BL04FG25Y");
 
 
@@ -44,6 +51,13 @@ function ScrollToTopAndTrackPageView() {
   useEffect(() => {
     // Send pageview with the current path to Google Analytics
     ReactGA.send({ hitType: "pageview", page: pathname + search });
+    
+    // Also send to global gtag for Google Search Console compatibility
+    if (window.gtag) {
+      window.gtag('event', 'page_view', {
+        page_path: pathname + search,
+      });
+    }
   }, [pathname, search]);
 
   return null;
