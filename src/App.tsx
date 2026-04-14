@@ -88,7 +88,7 @@ function ScrollToTopAndTrackPageView() {
     updateMetaTags({
       title: metaTags.title,
       description: metaTags.description,
-      canonical: `https://odin-website.com${pathname}`
+      canonical: `https://odinsocial.vercel.app${pathname}`
     });
   }, [pathname]);
 
