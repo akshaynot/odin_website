@@ -34,26 +34,25 @@ const PageLoader = () => (
   </div>
 );
 
-function ScrollToTopOnRouteChange() {
-  const { pathname } = useLocation();
+function ScrollToTopAndTrackPageView() {
+  const { pathname, search } = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
+  useEffect(() => {
+    // Send pageview with the current path to Google Analytics
+    ReactGA.send({ hitType: "pageview", page: pathname + search });
+  }, [pathname, search]);
+
   return null;
 }
 
 function App() {
-    const location = useLocation();
-
-    useEffect(() => {
-    // Send pageview with the current path
-    ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
-  }, [location]);
   return (
     <Router>
-      <ScrollToTopOnRouteChange />
+      <ScrollToTopAndTrackPageView />
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow pt-16">
