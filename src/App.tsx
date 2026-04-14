@@ -7,6 +7,13 @@ import {
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("G-0BL04FG25Y");
+
+
+
+
 
 // Lazy loading the page routes
 const Home = lazy(() => import("./pages/Home"));
@@ -38,6 +45,12 @@ function ScrollToTopOnRouteChange() {
 }
 
 function App() {
+    const location = useLocation();
+
+    useEffect(() => {
+    // Send pageview with the current path
+    ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
+  }, [location]);
   return (
     <Router>
       <ScrollToTopOnRouteChange />
