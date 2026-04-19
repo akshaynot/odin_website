@@ -48,6 +48,14 @@ const pageMetaTags: { [key: string]: { title: string; description: string } } = 
   '/news': {
     title: 'ODIN News & Updates | Latest Community Stories',
     description: 'Stay updated with the latest news, success stories, and updates from ODIN\'s community programs.'
+  },
+  '/corporate-partnership': {
+    title: 'Corporate Partnerships | ODIN Society',
+    description: 'Partner with ODIN for CSR initiatives, employee volunteering, and impactful community development.'
+  },
+  '/fundraise': {
+    title: 'Start a Campaign | ODIN Society',
+    description: 'Start your own fundraising campaign for ODIN. Empower communities and create a lasting impact by getting your network involved.'
   }
 };
 
@@ -64,6 +72,9 @@ const GetInvolved = lazy(() => import("./pages/GetInvolved"));
 const Volunteer = lazy(() => import("./pages/Volunteer"));
 const Contact = lazy(() => import("./pages/Contact"));
 const News = lazy(() => import("./pages/News"));
+const CorporatePartnership = lazy(() => import("./pages/CorporatePartnership"));
+const Fundraise = lazy(() => import("./pages/Fundraise"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 // A clean Loading fallback while JS chunks download
 const PageLoader = () => (
@@ -95,7 +106,7 @@ function ScrollToTopAndTrackPageView() {
   useEffect(() => {
     // Send pageview with the current path to Google Analytics
     ReactGA.send({ hitType: "pageview", page: pathname + search });
-    
+
     // Also send to global gtag for Google Search Console compatibility
     if (window.gtag) {
       window.gtag('event', 'page_view', {
@@ -123,6 +134,9 @@ function App() {
               <Route path="/donate" element={<GetInvolved />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/news" element={<News />} />
+              <Route path="/corporate-partnership" element={<CorporatePartnership />} />
+              <Route path="/fundraise" element={<Fundraise />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
         </main>

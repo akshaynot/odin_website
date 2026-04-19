@@ -29,13 +29,13 @@ export default function GetInvolved() {
         <title>Get Involved | ODIN - Cultural and Social Welfare Society</title>
         <meta name="description" content="Support ODIN's mission through donations, volunteering, and spreading the word. Make a direct impact." />
         <meta name="keywords" content="donate, volunteer, ODIN, cultural welfare society, social work, NGO India" />
-        
+
         {/* Open Graph Tags */}
         <meta property="og:title" content="Get Involved & Donate | ODIN Society" />
         <meta property="og:description" content="Your contribution makes a significant difference. Help us empower communities securely via UPI or by volunteering." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://odin-society.org/donate" />
-        
+
         <script type="application/ld+json">
           {JSON.stringify(schemaMarkup)}
         </script>
@@ -73,7 +73,7 @@ export default function GetInvolved() {
               <div className="h-1 shadow-sm w-24 bg-gradient-to-r from-orange-400 to-pink-500 mx-auto rounded-full"></div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <h3 className="text-xl font-bold mb-4 text-slate-900">Spread the Word</h3>
                 <p className="text-slate-600 mb-6 leading-relaxed font-light">
@@ -81,9 +81,60 @@ export default function GetInvolved() {
                   and within your network.
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <Button variant="ghost" className="px-0 hover:bg-transparent hover:text-orange-600 font-normal">Facebook</Button>
+                  <Button
+                    variant="ghost"
+                    className="px-0 hover:bg-transparent hover:text-orange-600 font-normal"
+                    onClick={() => {
+                      const url = "https://odinsocial.vercel.app";
+                      window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank', 'width=600,height=400');
+                    }}
+                  >
+                    Facebook
+                  </Button>
                   <span className="text-slate-300 self-center">|</span>
-                  <Button variant="ghost" className="px-0 hover:bg-transparent hover:text-orange-600 font-normal">Instagram</Button>
+                  <Button
+                    variant="ghost"
+                    className="px-0 hover:bg-transparent hover:text-orange-600 font-normal"
+                    onClick={() => {
+                      const url = "https://odinsocial.vercel.app";
+
+                      // For mobile devices, natively share if supported
+                      if (navigator.share && /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                        navigator.share({
+                          title: 'Get Involved | ODIN Society',
+                          text: 'Help us make a difference!',
+                          url: url,
+                        }).catch(console.error);
+                      } else {
+                        // Desktop fallback: copy to clipboard and open Instagram
+                        const fallbackCopy = () => {
+                          const textArea = document.createElement("textarea");
+                          textArea.value = url;
+                          document.body.appendChild(textArea);
+                          textArea.select();
+                          try {
+                            document.execCommand('copy');
+                            alert("Website link copied! Opening Instagram so you can share it.");
+                          } catch (err) {
+                            console.error('Copy failed', err);
+                          }
+                          document.body.removeChild(textArea);
+                          window.open("https://www.instagram.com", "_blank");
+                        };
+
+                        if (navigator.clipboard) {
+                          navigator.clipboard.writeText(url).then(() => {
+                            alert("Website link copied! Opening Instagram so you can share it.");
+                            window.open("https://www.instagram.com", "_blank");
+                          }).catch(() => fallbackCopy());
+                        } else {
+                          fallbackCopy();
+                        }
+                      }
+                    }}
+                  >
+                    Instagram
+                  </Button>
                 </div>
               </div>
 
@@ -93,20 +144,20 @@ export default function GetInvolved() {
                   Partner with us for CSR initiatives and make a lasting impact on
                   communities.
                 </p>
-                <Button variant="outline" className="w-full rounded-full border-orange-200 text-orange-600 hover:bg-orange-50">
+                <Button href="/corporate-partnership" variant="outline" className="w-full rounded-full border-orange-200 text-orange-600 hover:bg-orange-50">
                   Learn More
                 </Button>
               </div>
 
-              <div className="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              {/* <div className="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <h3 className="text-xl font-bold mb-4 text-slate-900">Fundraise</h3>
                 <p className="text-slate-600 mb-6 leading-relaxed font-light">
                   Start your own fundraising campaign to support our causes.
                 </p>
-                <Button variant="outline" className="w-full rounded-full border-orange-200 text-orange-600 hover:bg-orange-50">
+                <Button href="/fundraise" variant="outline" className="w-full rounded-full border-orange-200 text-orange-600 hover:bg-orange-50">
                   Start Campaign
                 </Button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
