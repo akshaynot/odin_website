@@ -22,40 +22,40 @@ ReactGA.initialize("G-0BL04FG25Y");
 // Page meta tag configurations
 const pageMetaTags: { [key: string]: { title: string; description: string } } = {
   '/': {
-    title: 'ODIN - Cultural and Social Welfare Society | Community Empowerment',
-    description: 'ODIN empowers marginalized communities through education, healthcare, and economic programs. Join our mission to create sustainable change across India.'
+    title: 'ODIN NGO India | ODIN Social | Cultural and Social Welfare',
+    description: 'ODIN, also known as ODIN Social, is a leading ODIN NGO in India empowering marginalized communities through education, healthcare, and economic programs.'
   },
   '/about': {
-    title: 'About ODIN | Our Mission, Vision & Team',
-    description: 'Learn about ODIN\'s mission to empower communities through education, healthcare, and cultural preservation. Meet our dedicated team.'
+    title: 'About ODIN NGO | ODIN Social Mission, Vision & Team',
+    description: 'Learn about ODIN NGO\'s mission to empower communities in India. Meet the dedicated team behind ODIN Social.'
   },
   '/work': {
-    title: 'Our Work & Programs | ODIN Community Projects',
-    description: 'Explore ODIN\'s theatre programs, cultural initiatives, and community workshops designed to create lasting social impact.'
+    title: 'Our Work & Programs | ODIN NGO India Projects',
+    description: 'Explore ODIN Social\'s initiatives, cultural programs, and community workshops designed to create lasting social impact across India.'
   },
   '/get-involved': {
-    title: 'Get Involved | Volunteer & Donate with ODIN',
-    description: 'Make a difference! Join ODIN as a volunteer or support our mission through donations to empower communities.'
+    title: 'Get Involved | Volunteer & Donate with ODIN NGO',
+    description: 'Make a difference! Join ODIN Social as a volunteer or support our mission to empower communities in India.'
   },
   '/donate': {
-    title: 'Donate to ODIN | Support Community Empowerment',
-    description: 'Your donation helps ODIN provide education, healthcare, and cultural programs to marginalized communities.'
+    title: 'Donate to ODIN NGO | Support ODIN Social in India',
+    description: 'Your donation helps the ODIN NGO provide education, healthcare, and cultural programs to marginalized communities in India.'
   },
   '/contact': {
-    title: 'Contact ODIN | Get in Touch',
-    description: 'Have questions? Contact ODIN to learn more about our programs, volunteer opportunities, or partnership opportunities.'
+    title: 'Contact ODIN NGO | Reach Out to ODIN Social',
+    description: 'Have questions? Contact ODIN NGO India to learn more about our programs, volunteer opportunities, or partnerships.'
   },
   '/news': {
-    title: 'ODIN News & Updates | Latest Community Stories',
-    description: 'Stay updated with the latest news, success stories, and updates from ODIN\'s community programs.'
+    title: 'ODIN NGO News & Updates | ODIN Social Stories',
+    description: 'Stay updated with the latest news, success stories, and updates from ODIN NGO\'s community programs in India.'
   },
   '/corporate-partnership': {
-    title: 'Corporate Partnerships | ODIN Society',
-    description: 'Partner with ODIN for CSR initiatives, employee volunteering, and impactful community development.'
+    title: 'Corporate Partnerships | ODIN NGO India',
+    description: 'Partner with ODIN Social for CSR initiatives, employee volunteering, and impactful community development.'
   },
   '/fundraise': {
-    title: 'Start a Campaign | ODIN Society',
-    description: 'Start your own fundraising campaign for ODIN. Empower communities and create a lasting impact by getting your network involved.'
+    title: 'Start a Campaign | ODIN NGO Social',
+    description: 'Start your own fundraising campaign for ODIN NGO. Empower communities in India and create a lasting impact.'
   }
 };
 
