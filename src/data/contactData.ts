@@ -5,7 +5,7 @@ export const contactInfo = {
         line2: "Ganj Basoda, Madhya Pradesh 464221",
         country: "India",
     },
-    phone: "+91 8871130485",
+    phone: "+91 8871130487",
     email: "odincasw.society@gmail.com",
     officeHours: [
         { day: "Monday - Friday", hours: "9:00 AM - 6:00 PM" },

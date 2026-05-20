@@ -137,7 +137,7 @@ export default function CorporatePartnership() {
                     </div>
                     <div>
                       <dt className="text-sm font-semibold text-orange-400 uppercase tracking-wider mt-4">Call Us</dt>
-                      <dd className="mt-1 text-lg">+91 8871130485</dd>
+                      <dd className="mt-1 text-lg">+91 8871130487</dd>
                     </div>
                   </dl>
                   <div className="mt-10">
